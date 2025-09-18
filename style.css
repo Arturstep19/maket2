@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'TTLakes';
+  src: url('fonts/TTLakes-Regular.woff2') format('woff2'),
+       url('fonts/TTLakes-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url('fonts/TTLakes-Medium.woff2') format('woff2'),
+       url('fonts/TTLakes-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  src: url('fonts/TTLakes-Bold.woff2') format('woff2'),
+       url('fonts/TTLakes-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ---------- Общие ---------- */
+body {
+  margin: 0;
+  background: #F8F8F8;
+  font-family: 'TTLakes', Arial, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 0 52px rgba(14,24,80,0.12),
+              -2px 0 4px rgba(69,79,126,0.02);
+  transform: translateX(0);
+}
+
+/* ---------- Верхняя панель ---------- */
+.menu-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px 8px 24px;
+  min-height: 64px;
+}
+
+.menu-header .top-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+.menu-header .top-icon:hover {
+  filter: brightness(1.2);
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.menu-header .logo {
+  position: absolute;
+  left: 72px; 
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+}
+.menu-header .logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.menu-nav {
+  padding: 32px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-grow: 1;
+}
+
+.menu-nav a {
+  position: relative;
+  text-decoration: none;
+  color: #1B1C21;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-left: 20px;
+  transition: color 0.3s ease;
+}
+.menu-nav a:hover {
+  color: #7E7E82;
+}
+.menu-nav a.active {
+  color: #7E7E82;
+}
+.menu-nav a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #41F6D7;
+  border-radius: 0 4px 4px 0;
+}
+
+.menu-footer {
+  margin-top: auto;
+  padding: 20px 24px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-icons .footer-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+.footer-icons .footer-icon:hover {
+  filter: brightness(1.2);
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.footer-info .mail {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color:#1B1C21;
+}
+.footer-info .phone {
+  margin: 0 0 16px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1B1C21;
+}
+
+.footer-lang {
+  display: flex;
+  gap: 16px;
+  color: #7E7E82;
+}
+.footer-lang a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7E7E82;
+}
+.footer-lang a.active {
+  color: #1B1C21;
+  font-weight: 700;
+}
