@@ -10,41 +10,43 @@
   <aside class="menu">
     <!-- Верхняя панель -->
     <header class="menu-header">
-      <img src="img/burger.png" alt="close" class="icon-btn top-icon close-icon">
+      <button class="icon-btn top-icon close-icon" aria-label="Закрыть меню"></button>
       <div class="logo"><img src="img/Group.png" alt="CPS"></div>
-      <img src="img/search.png" alt="search" class="icon-btn top-icon search-icon">
+      <button class="icon-btn top-icon search-icon" aria-label="Поиск"></button>
     </header>
 
     <!-- Навигация -->
     <nav class="menu-nav">
-      <a href="#" class="active">Ремонт техники</a>
-      <a href="#">Услуги и сервисы</a>
-      <a href="#">Корпоративным клиентам</a>
-      <a href="#">Продавцам техники</a>
-      <a href="#">Партнёрам</a>
-      <a href="#">Производителям</a>
-      <a href="#">Наши сервисные центры</a>
-      <a href="#">Контакты</a>
+      <ul>
+        <li><a href="#" class="active">Ремонт техники</a></li>
+        <li><a href="#">Услуги и сервисы</a></li>
+        <li><a href="#">Корпоративным клиентам</a></li>
+        <li><a href="#">Продавцам техники</a></li>
+        <li><a href="#">Партнёрам</a></li>
+        <li><a href="#">Производителям</a></li>
+        <li><a href="#">Наши сервисные центры</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
     </nav>
 
     <!-- Футер -->
     <footer class="menu-footer">
       <div class="footer-icons">
-        <img src="img/chat copy.png" alt="phone" class="icon-btn footer-icon">
-        <img src="img/chat.png" alt="chat" class="icon-btn footer-icon">
-        <img src="img/profile.png" alt="profile" class="icon-btn footer-icon">
+        <button class="icon-btn footer-icon phone-icon" aria-label="Позвонить"></button>
+        <button class="icon-btn footer-icon chat-icon" aria-label="Написать в чат"></button>
+        <button class="icon-btn footer-icon profile-icon" aria-label="Профиль"></button>
       </div>
 
       <div class="footer-info">
-        <p class="mail">mail@cps.com</p>
-        <p class="phone">8 800 890 8900</p>
+        <a class="mail" href="mailto:mail@cps.com">mail@cps.com</a>
+        <a class="phone" href="tel:+78008908900">8 800 890 8900</a>
       </div>
 
-      <div class="footer-lang">
-        <a href="#" class="active">RU</a>
-        <a href="#">EN</a>
-        <a href="#">CH</a>
-      </div>
+      <ul class="footer-lang">
+        <li><a href="#" class="active">RU</a></li>
+        <li><a href="#">EN</a></li>
+        <li><a href="#">CH</a></li>
+      </ul>
     </footer>
   </aside>
 </body>
